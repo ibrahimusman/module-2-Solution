@@ -1,0 +1,120 @@
+body{
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-container h1{
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+}
+.inner-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.chicken-container{
+    width:25%;
+    background-color: gray;
+    color: black;
+    border: 3px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+.chicken-container h1{
+    font-size: 20px;
+    color: #333;
+}
+.chicken-heading{
+    background-color: pink;
+    border: 1px solid #333;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+}
+.beef-container{
+    width:25%;
+    background-color: gray;
+    color: black;
+    border: 3px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+.beef-container h1{
+    font-size: 20px;
+    color: #333;
+}
+.beef-heading{
+    background-color:crimson;
+    border: 1px solid #333;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+}
+.sushi-container{
+    width:25%;
+    background-color: gray;
+    color: black;
+    border: 3px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+.sushi-container h1{
+    font-size: 20px;
+    color: #333;
+    
+}
+.sushi-heading{
+    background-color:bisque;
+    border: 1px solid #333;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    height: 40px;
+    float: right;
+    align-items: center;
+}
+.paragraph{
+    padding: 15px;
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+.chicken-container{
+    width: 45%;
+}
+.beef-container{
+    width: 45%;
+}
+.sushi-container{
+    width: 95%;
+    margin-top: 20px;
+}
+}
+    
+@media screen and (max-width: 767px){
+    .inner-container{
+        flex-direction: column;
+    }
+    .chicken-container{
+        width: 100%;
+    }
+    .beef-container{
+        width: 100%;
+    }
+    .sushi-container{
+        width: 100%;
+    }
+}
